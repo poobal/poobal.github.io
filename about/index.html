@@ -1,269 +1,202 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About</title>
+        <link rel="canonical" href="http://poobal.github.io/about/">
+        <style>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    
-    
-        <meta name="twitter:card" content="summary"/>
-    
-
-
-
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content=""/>
-<meta name="twitter:site" content="@"/>
-
-
-
-  	<meta property="og:title" content="About &middot; My Personal Website" />
-  	<meta property="og:site_name" content="My Personal Website" />
-  	<meta property="og:url" content="http://poobal.github.io/about/" />
-
-    
-        
-    
-
-    
-    <meta property="og:description" content="" />
-  	<meta property="og:type" content="article" />
-    <meta property="article:published_time" content="2020-11-22T17:31:06-06:00" />
-
-    
-    
-
-    <title>About &middot; My Personal Website</title>
-
-    
-    <meta name="description" content="" />
-    
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="/images/favicon.ico">
-	  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
-
-    <link rel="stylesheet" type="text/css" href="/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="/css/nav.css" />
-
-    
-
-    
-
-    
-      
-          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My Personal Website" />
-      
-      
-    
-    <meta name="generator" content="Hugo 0.74.3" />
-
-    <link rel="canonical" href="http://poobal.github.io/about/" />
-
-    
-      
-    
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "publisher": {
-        "@type": "Organization",
-        "name":  null 
-    },
-    "author": {
-        "@type": "Person",
-        "name":  null ,
-        
-        "url":  null ,
-        "sameAs": [
-            
-            
-             
-             
-             
-             
-             
-            
-        ]
-    },
-    "headline": "About",
-    "name": "About",
-    "wordCount":  0 ,
-    "timeRequired": "PT0M",
-    "inLanguage": {
-      "@type": "Language",
-      "alternateName": "en"
-    },
-    "url": "http://poobal.github.io/about/",
-    "datePublished": "2020-11-22T17:31Z",
-    "dateModified": "2020-11-22T17:31Z",
-    
-    
-    "description": "",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "http://poobal.github.io/about/"
+    html body {
+        font-family: '', sans-serif;
+        background-color: white;
     }
-}
+
+    :root {
+        --accent: #2196F3;
+        --border-width:  0 ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="http://poobal.github.io/css/main.css">
+
+
+
+
+ 
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+
+
+<script>
+$(document).ready(function(){
+    
+  var input = $('#night-mode-toggle');
+  var container = $('#bigbody');
+  var stat = $('#button-status');
+  
+  container.toggleClass(localStorage.toggled);
+  stat.bootstrapToggle(localStorage.button).change();
+  
+  input.on('click', function() {
+      if (localStorage.toggled != "-nightmode" ) {
+          container.toggleClass("-nightmode", true );
+          localStorage.toggled = "-nightmode";
+          localStorage.button = "on";
+       } else {
+          container.toggleClass("-nightmode", false );
+          localStorage.toggled = "";
+          localStorage.button = "off"
+       }
+  })
+});
+</script>
+ <meta name="generator" content="Hugo 0.74.3" />
+        <link href="" rel="alternate" type="application/rss+xml" title="My Personal Website" />
+        <link href="" rel="feed" type="application/rss+xml" title="My Personal Website" />
+        
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    <meta property="og:title" content="About">
+    <meta property="og:type" content="article">
+      
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:image" content="http://poobal.github.io/" >
+      
+    <meta property="description" content="">
+    <meta property="og:description" content="">
+    
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:site" content="">
+    
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     
 
+    <body id = "bigbody">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="#">About</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                    
+                </div>
+            </div>
+        </nav>
 
+
+<main>
+
+    <div class="item">
+
+    
+    
     
 
     
+    
+    
+    
+
+    <h4><a href="/about/">About</a></h4>
+    <h5>November 22, 2020 -  minutes</h5>
+    <h5></h5>
 
     
-</head>
-<body class="nav-closed">
-
-  <div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        
-        
-    </ul>
-
     
-    <a class="subscribe-button icon-feed" href="/index.xml">Subscribe</a>
-    
+
 </div>
-<span class="nav-cover"></span>
 
 
- <div class="site-wrapper">
-
-
-
-
-
-<header class="main-header post-head no-cover">
-    <nav class="main-nav overlay clearfix">
-
-
-      
-      
-        
-          <a class="menu-button icon-feed" href="">&nbsp;&nbsp;Subscribe</a>
-        
-      
-    </nav>
+    <br> <div class="text-justify"></div>
 
     
+    
 
-
-</header>
-
-
-
-<main class="content" role="main">
-
-
-
-
-  <article class="post ">
-    <header class="post-header">
-      <nav class="breadcrumb">
-        
-        
-        
-      </nav>
-
-
-        <h1 class="post-title">About</h1>
-        <small></small>
-
-        <section class="post-meta">
-        
-         
-        </section>
-    </header>
-
-    <section class="post-content">
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-
-  <footer class="post-footer">
-
+    
 
     
 
     
 
-
-
-
     
-<section class="share">
-  <h4>Share this page</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=About&nbsp;-&nbsp;My%20Personal%20Website&amp;url=http%3a%2f%2fpoobal.github.io%2fabout%2f"
-      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-      <span class="hidden">Twitter</span>
-  </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fpoobal.github.io%2fabout%2f"
-      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-      <span class="hidden">Facebook</span>
-  </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fpoobal.github.io%2fabout%2f&amp;description=About"
-      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
-      <span class="hidden">Pinterest</span>
-  </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fpoobal.github.io%2fabout%2f"
-     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-      <span class="hidden">Google+</span>
-  </a>
-</section>
-
-
-
-    
-
-
-
-
-
-
-
-  </footer>
-</article>
 
 </main>
 
-<aside class="read-next">
-  
-  
-</aside>
-
-
-    <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">My Personal Website</a> © 2020 Karthik Poobalasubramanian</section>
+        <footer id = "bigfooter">
+            <div style = "padding:15px;">
+                <p>Powered by <a href="https://gohugo.io">Hugo</a>. Themed by <a href="https://github.com/nathancday/min_night">min_night</a>.
+                </p>
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"
+                title="Creative Commons Attribution 4.0 International license">
+                <i class="fab fa-creative-commons" aria-hidden="true"></i> Attribution 4.0 International license
+                </a>
+            </div>
+        </footer>
         
-        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
-        
-    </footer>
-    </div>
-    <script type="text/javascript" src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
-    
-</body>
+        <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+          gtag('config', '');
+        </script>
+       
+    </body>
+
 </html>
 
